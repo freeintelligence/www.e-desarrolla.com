@@ -1,1 +1,0 @@
-(self.webpackChunkwww_e_desarrolla_com=self.webpackChunkwww_e_desarrolla_com||[]).push([[138],{138:e=>{e.exports=function(){var e=document.querySelector(".content .sqs-layout .col .sqs-block.html-block.sqs-block-html:first-of-type .sqs-html-content h2");e&&(e.style.fontSize="1.6em",e.style.color="red")}}}]);
