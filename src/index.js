@@ -1,15 +1,17 @@
 var pathname = window.location.pathname
 var educacionEmocional = require('./sections/educacion-emocional.js')
-
-console.log('pathname', pathname)
+var coaching = require('./sections/coaching.js')
+var empresasSaludables = require('./sections/empresas-saludables.js')
 
 function main() {
-  console.log('main')
-
   if (pathname === '/educacion-emocional') {
-    console.log('educacionl emodioncla;')
-
     educacionEmocional()
+  }
+  if (pathname === '/coaching') {
+    coaching()
+  }
+  if (pathname === '/empresas-saludables') {
+    empresasSaludables()
   }
 }
 

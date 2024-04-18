@@ -15,7 +15,17 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpack_require__(/*! ./sections/educacion-emocional.js */ \"./src/sections/educacion-emocional.js\")\n\nconsole.log('pathname', pathname)\n\nfunction main() {\n  console.log('main')\n\n  if (pathname === '/educacion-emocional') {\n    console.log('educacionl emodioncla;')\n\n    educacionEmocional()\n  }\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  main()\n})\n\nmain()\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/index.js?");
+eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpack_require__(/*! ./sections/educacion-emocional.js */ \"./src/sections/educacion-emocional.js\")\nvar coaching = __webpack_require__(/*! ./sections/coaching.js */ \"./src/sections/coaching.js\")\nvar empresasSaludables = __webpack_require__(/*! ./sections/empresas-saludables.js */ \"./src/sections/empresas-saludables.js\")\n\nfunction main() {\n  if (pathname === '/educacion-emocional') {\n    educacionEmocional()\n  }\n  if (pathname === '/coaching') {\n    coaching()\n  }\n  if (pathname === '/empresas-saludables') {\n    empresasSaludables()\n  }\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  main()\n})\n\nmain()\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/sections/coaching.js":
+/*!**********************************!*\
+  !*** ./src/sections/coaching.js ***!
+  \**********************************/
+/***/ ((module) => {
+
+eval("module.exports = function () {\n  var videoCssSelector = '.section-border'\n  var videoElement = document.querySelector(videoCssSelector)\n\n  var contentWrapperCssSelector = '.content-wrapper'\n  var contentWrapperElement = document.querySelector(contentWrapperCssSelector)\n\n  var pageSectionCssSelector = '.page-section'\n  var pageSectionElement = document.querySelector(pageSectionCssSelector)\n\n  if (videoElement) {\n    videoElement.remove()\n  }\n\n  if (contentWrapperElement) {\n    contentWrapperElement.remove()\n  }\n\n  if (pageSectionElement) {\n    pageSectionElement.style.minHeight = 'auto'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/coaching.js?");
 
 /***/ }),
 
@@ -25,7 +35,17 @@ eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpac
   \*********************************************/
 /***/ ((module) => {
 
-eval("module.exports = function () {\n  var cssSelector = '.content .sqs-layout .col .sqs-block.html-block.sqs-block-html:first-of-type .sqs-html-content h2'\n  var element = document.querySelector(cssSelector)\n\n  console.log('se ejecuta dentro de educacion emocional')\n\n  if (element) {\n    element.style.fontSize = '1.6em'\n    element.style.color = 'red'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/educacion-emocional.js?");
+eval("module.exports = function () {\n  var cssSelector = '.content .sqs-layout .col .sqs-block.html-block.sqs-block-html:first-of-type .sqs-html-content h2'\n  var element = document.querySelector(cssSelector)\n\n  if (element) {\n    element.style.fontSize = '1.5em'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/educacion-emocional.js?");
+
+/***/ }),
+
+/***/ "./src/sections/empresas-saludables.js":
+/*!*********************************************!*\
+  !*** ./src/sections/empresas-saludables.js ***!
+  \*********************************************/
+/***/ ((module) => {
+
+eval("module.exports = function () {\n  var videoCssSelector = '.section-border'\n  var videoElement = document.querySelector(videoCssSelector)\n\n  var contentWrapperCssSelector = '.content-wrapper'\n  var contentWrapperElement = document.querySelector(contentWrapperCssSelector)\n\n  var pageSectionCssSelector = '.page-section'\n  var pageSectionElement = document.querySelector(pageSectionCssSelector)\n\n  if (videoElement) {\n    videoElement.remove()\n  }\n\n  if (contentWrapperElement) {\n    contentWrapperElement.remove()\n  }\n\n  if (pageSectionElement) {\n    pageSectionElement.style.minHeight = 'auto'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/empresas-saludables.js?");
 
 /***/ })
 
