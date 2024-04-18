@@ -2,7 +2,8 @@ const pathname = window.location.pathname
 
 function main() {
   if (pathname === '/educacion-emocional') {
-    import('./sections/educacion-emocional.js')
+    var educacionEmocional = import('./sections/educacion-emocional.js')
+    educacionEmocional()
   }
 }
 
