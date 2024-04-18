@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpack_require__(/*! ./sections/educacion-emocional.js */ \"./src/sections/educacion-emocional.js\")\n\nfunction main() {\n  if (pathname === '/educacion-emocional') {\n    educacionEmocional()\n  }\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  main()\n})\n\nmain()\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/index.js?");
+eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpack_require__(/*! ./sections/educacion-emocional.js */ \"./src/sections/educacion-emocional.js\")\n\nconsole.log('pathname', pathname)\n\nfunction main() {\n  console.log('main')\n\n  if (pathname === '/educacion-emocional') {\n    console.log('educacionl emodioncla;')\n\n    educacionEmocional()\n  }\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  main()\n})\n\nmain()\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/index.js?");
 
 /***/ }),
 
@@ -25,7 +25,7 @@ eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpac
   \*********************************************/
 /***/ ((module) => {
 
-eval("module.exports = function () {\n  var cssSelector = '.content .sqs-layout .col .sqs-block.html-block.sqs-block-html:first-of-type .sqs-html-content h2'\n  var element = document.querySelector(cssSelector)\n\n  if (element) {\n    element.style.fontSize = '1.6em'\n    element.style.color = 'red'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/educacion-emocional.js?");
+eval("module.exports = function () {\n  var cssSelector = '.content .sqs-layout .col .sqs-block.html-block.sqs-block-html:first-of-type .sqs-html-content h2'\n  var element = document.querySelector(cssSelector)\n\n  console.log('se ejecuta dentro de educacion emocional')\n\n  if (element) {\n    element.style.fontSize = '1.6em'\n    element.style.color = 'red'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/educacion-emocional.js?");
 
 /***/ })
 
