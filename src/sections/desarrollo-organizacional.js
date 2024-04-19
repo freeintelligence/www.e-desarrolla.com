@@ -1,4 +1,4 @@
-module.exports = function (alwaysExecute = false) {
+module.exports = function () {
   var titleCssSelector = 'p.titular'
   var titleElement = document.querySelector(titleCssSelector)
 
