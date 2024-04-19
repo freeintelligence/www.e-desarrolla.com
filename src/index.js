@@ -19,7 +19,7 @@ function main() {
   }
 
   if (pathname === '/desarrollo-organizacional') {
-    desarrolloOrganizacional()
+    desarrolloOrganizacional(true)
   }
 
   arreglarVideoTelefonos()

@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpack_require__(/*! ./sections/educacion-emocional.js */ \"./src/sections/educacion-emocional.js\")\nvar coaching = __webpack_require__(/*! ./sections/coaching.js */ \"./src/sections/coaching.js\")\nvar empresasSaludables = __webpack_require__(/*! ./sections/empresas-saludables.js */ \"./src/sections/empresas-saludables.js\")\nvar desarrolloOrganizacional = __webpack_require__(/*! ./sections/desarrollo-organizacional.js */ \"./src/sections/desarrollo-organizacional.js\")\nvar arreglarVideoTelefonos = __webpack_require__(/*! ./sections/arreglar-video-telefonos.js */ \"./src/sections/arreglar-video-telefonos.js\")\n\nfunction main() {\n  if (pathname === '/educacion-emocional') {\n    educacionEmocional()\n  }\n\n  if (pathname === '/coaching') {\n    coaching()\n  }\n\n  if (pathname === '/empresas-saludables') {\n    empresasSaludables()\n  }\n\n  if (pathname === '/desarrollo-organizacional') {\n    desarrolloOrganizacional()\n  }\n\n  arreglarVideoTelefonos()\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  main()\n})\n\nmain()\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/index.js?");
+eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpack_require__(/*! ./sections/educacion-emocional.js */ \"./src/sections/educacion-emocional.js\")\nvar coaching = __webpack_require__(/*! ./sections/coaching.js */ \"./src/sections/coaching.js\")\nvar empresasSaludables = __webpack_require__(/*! ./sections/empresas-saludables.js */ \"./src/sections/empresas-saludables.js\")\nvar desarrolloOrganizacional = __webpack_require__(/*! ./sections/desarrollo-organizacional.js */ \"./src/sections/desarrollo-organizacional.js\")\nvar arreglarVideoTelefonos = __webpack_require__(/*! ./sections/arreglar-video-telefonos.js */ \"./src/sections/arreglar-video-telefonos.js\")\n\nfunction main() {\n  if (pathname === '/educacion-emocional') {\n    educacionEmocional()\n  }\n\n  if (pathname === '/coaching') {\n    coaching()\n  }\n\n  if (pathname === '/empresas-saludables') {\n    empresasSaludables()\n  }\n\n  if (pathname === '/desarrollo-organizacional') {\n    desarrolloOrganizacional(true)\n  }\n\n  arreglarVideoTelefonos()\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  main()\n})\n\nmain()\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/index.js?");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ eval("var alreadyExecuted = false\n\nmodule.exports = function () {\n  if (alrea
   \***************************************************/
 /***/ ((module) => {
 
-eval("var alreadyExecuted = false\n\nmodule.exports = function () {\n  if (alreadyExecuted) {\n    return\n  }\n\n  var titleCssSelector = 'p.titular'\n  var titleElement = document.querySelector(titleCssSelector)\n\n  if (titleElement) {\n    titleElement.computedStyleMap.fontSize = '24px'\n  }\n\n  alreadyExecuted = true\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/desarrollo-organizacional.js?");
+eval("module.exports = function (alwaysExecute = false) {\n  var titleCssSelector = 'p.titular'\n  var titleElement = document.querySelector(titleCssSelector)\n\n  if (titleElement) {\n    titleElement.computedStyleMap.fontSize = '24px'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/desarrollo-organizacional.js?");
 
 /***/ }),
 
