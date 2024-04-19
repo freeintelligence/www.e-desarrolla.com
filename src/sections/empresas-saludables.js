@@ -1,4 +1,10 @@
+var alreadyExecuted = false
+
 module.exports = function () {
+  if (alreadyExecuted) {
+    return
+  }
+
   var videoCssSelector = '.section-border'
   var videoElement = document.querySelector(videoCssSelector)
 
@@ -19,4 +25,6 @@ module.exports = function () {
   if (pageSectionElement) {
     pageSectionElement.style.minHeight = 'auto'
   }
+
+  alreadyExecuted = true
 }

@@ -25,7 +25,7 @@ eval("var pathname = window.location.pathname\nvar educacionEmocional = __webpac
   \**********************************/
 /***/ ((module) => {
 
-eval("module.exports = function () {\n  /* var videoCssSelector = '.section-border'\n  var videoElement = document.querySelector(videoCssSelector)\n\n  var contentWrapperCssSelector = '.content-wrapper'\n  var contentWrapperElement = document.querySelector(contentWrapperCssSelector)\n\n  var pageSectionCssSelector = '.page-section'\n  var pageSectionElement = document.querySelector(pageSectionCssSelector)\n\n  if (videoElement) {\n    videoElement.remove()\n  }\n\n  if (contentWrapperElement) {\n    contentWrapperElement.remove()\n  }\n\n  if (pageSectionElement) {\n    pageSectionElement.style.minHeight = 'auto'\n  } */\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/coaching.js?");
+eval("var alreadyExecuted = false\n\nmodule.exports = function () {\n  if (alreadyExecuted) {\n    return\n  }\n\n  var videoCssSelector = '.section-border'\n  var videoElement = document.querySelector(videoCssSelector)\n\n  var contentWrapperCssSelector = '.content-wrapper'\n  var contentWrapperElement = document.querySelector(contentWrapperCssSelector)\n\n  var pageSectionCssSelector = '.page-section'\n  var pageSectionElement = document.querySelector(pageSectionCssSelector)\n\n  if (videoElement) {\n    videoElement.remove()\n  }\n\n  if (contentWrapperElement) {\n    contentWrapperElement.remove()\n  }\n\n  if (pageSectionElement) {\n    pageSectionElement.style.minHeight = 'auto'\n  }\n\n  alreadyExecuted = true\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/coaching.js?");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ eval("module.exports = function () {\n  var cssSelector = '.content .sqs-layout 
   \*********************************************/
 /***/ ((module) => {
 
-eval("module.exports = function () {\n  var videoCssSelector = '.section-border'\n  var videoElement = document.querySelector(videoCssSelector)\n\n  var contentWrapperCssSelector = '.content-wrapper'\n  var contentWrapperElement = document.querySelector(contentWrapperCssSelector)\n\n  var pageSectionCssSelector = '.page-section'\n  var pageSectionElement = document.querySelector(pageSectionCssSelector)\n\n  if (videoElement) {\n    videoElement.remove()\n  }\n\n  if (contentWrapperElement) {\n    contentWrapperElement.remove()\n  }\n\n  if (pageSectionElement) {\n    pageSectionElement.style.minHeight = 'auto'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/empresas-saludables.js?");
+eval("var alreadyExecuted = false\n\nmodule.exports = function () {\n  if (alreadyExecuted) {\n    return\n  }\n\n  var videoCssSelector = '.section-border'\n  var videoElement = document.querySelector(videoCssSelector)\n\n  var contentWrapperCssSelector = '.content-wrapper'\n  var contentWrapperElement = document.querySelector(contentWrapperCssSelector)\n\n  var pageSectionCssSelector = '.page-section'\n  var pageSectionElement = document.querySelector(pageSectionCssSelector)\n\n  if (videoElement) {\n    videoElement.remove()\n  }\n\n  if (contentWrapperElement) {\n    contentWrapperElement.remove()\n  }\n\n  if (pageSectionElement) {\n    pageSectionElement.style.minHeight = 'auto'\n  }\n\n  alreadyExecuted = true\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/empresas-saludables.js?");
 
 /***/ })
 
