@@ -15,7 +15,7 @@ function main() {
     empresasSaludables()
   }
 
-  arreglarVideoTelefonos()
+  //arreglarVideoTelefonos()
 }
 
 document.addEventListener('DOMContentLoaded', function () {
