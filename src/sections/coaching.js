@@ -1,5 +1,5 @@
 module.exports = function () {
-  var videoCssSelector = '.section-border'
+  /* var videoCssSelector = '.section-border'
   var videoElement = document.querySelector(videoCssSelector)
 
   var contentWrapperCssSelector = '.content-wrapper'
@@ -18,5 +18,5 @@ module.exports = function () {
 
   if (pageSectionElement) {
     pageSectionElement.style.minHeight = 'auto'
-  }
+  } */
 }
