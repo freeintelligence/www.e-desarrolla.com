@@ -5,6 +5,12 @@ module.exports = function () {
     return
   }
 
+  var isFirefoxMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && /Firefox/i.test(navigator.userAgent)
+
+  if (!isFirefoxMobile) {
+    return
+  }
+
   var cssSelector = '.sqs-video-background'
   var element = document.querySelector(cssSelector)
 
