@@ -3,6 +3,6 @@ module.exports = function (alwaysExecute = false) {
   var titleElement = document.querySelector(titleCssSelector)
 
   if (titleElement) {
-    titleElement.computedStyleMap.fontSize = '24px'
+    titleElement.style.fontSize = '24px'
   }
 }

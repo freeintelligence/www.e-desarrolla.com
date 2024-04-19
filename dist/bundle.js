@@ -45,7 +45,7 @@ eval("var alreadyExecuted = false\n\nmodule.exports = function () {\n  if (alrea
   \***************************************************/
 /***/ ((module) => {
 
-eval("module.exports = function (alwaysExecute = false) {\n  var titleCssSelector = 'p.titular'\n  var titleElement = document.querySelector(titleCssSelector)\n\n  if (titleElement) {\n    titleElement.computedStyleMap.fontSize = '24px'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/desarrollo-organizacional.js?");
+eval("module.exports = function (alwaysExecute = false) {\n  var titleCssSelector = 'p.titular'\n  var titleElement = document.querySelector(titleCssSelector)\n\n  if (titleElement) {\n    titleElement.style.fontSize = '24px'\n  }\n}\n\n\n//# sourceURL=webpack://www.e-desarrolla.com/./src/sections/desarrollo-organizacional.js?");
 
 /***/ }),
 
