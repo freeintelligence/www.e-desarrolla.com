@@ -26,5 +26,16 @@ module.exports = function () {
     pageSectionElement.style.minHeight = 'auto'
   }
 
+  var style = document.createElement('style')
+  style.innerHTML = `
+    @media (max-width: 520px) {
+      .page-section.layout-engine-section {
+        min-height: auto !important;
+      }
+    }
+`
+
+  document.head.appendChild(style)
+
   alreadyExecuted = true
 }
